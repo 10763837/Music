@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.xxp.music.activity.FileActivity">
+
+    <include layout="@layout/title_bar"
+        android:id="@+id/include" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_search"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:id="@+id/btn_search"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="点扫描本地目录"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="有音乐没添加到本地列表???"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_search"
+        android:layout_below="@+id/include"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/include"
+      android:layout_above="@+id/btn_search">
+      <include layout="@layout/song_list" />
+  </LinearLayout>
+
+</RelativeLayout>
