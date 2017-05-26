@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBar
     FrameLayout frameLayout;
     @BindView(R.id.iv_go_where)
     FloatingActionButton ivGoWhere;
+    private static final String TAG = "MainActivity";
 
 
     //用来装本地的歌曲
